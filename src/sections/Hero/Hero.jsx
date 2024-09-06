@@ -40,10 +40,10 @@ export default function HeroSection() {
       </div>
       <div className="max-w-lg flex self-center transition">
         <img
-          src="/hero.jpg"
+          src="/avatar.webp"
           loading="lazy"
-          className="w-full h-auto rounded-3xl shadow-2xl shadow-black/90"
-          alt="me"
+          className="w-full bg-blue-950 h-auto rounded-3xl shadow-2xl shadow-black/90"
+          alt="hero"
         />
       </div>
     </section>
