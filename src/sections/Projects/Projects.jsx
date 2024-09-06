@@ -4,15 +4,16 @@ import { projectsData } from '../../utils/constants';
 
 export default function Projects({ projectsRef }) {
   return (
-    <Section scrollRef={projectsRef}>
+    <Section scrollRef={projectsRef} className={'max-w-5xl'}>
       <SectionTitle>Projects</SectionTitle>
+
       <div
-        className="max-w-5xl shadow-2xl bg-white/10 rounded-3xl p-2
-       grid grid-cols-[repeat(auto-fill,minmax(220px,1fr))]
-          place-items-center "
+        className="w-full shadow-2xl bg-white/10 rounded-3xl
+        grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))]
+        place-items-center overflow-auto p-2"
       >
         {projectsData.map((project, index) => {
-          return <ProjectCard key={index} data={project} />;
+          return <ProjectCard key={index} project={project} />;
         })}
       </div>
     </Section>
