@@ -5,7 +5,7 @@ export default function Logo({ logoRef, scrollIntoView }) {
     <div
       onClick={() => scrollIntoView()}
       ref={logoRef}
-      className="cursor-pointer pb-4 text-6xl font-cursive flex items-center justify-center w-full md:w-1/5 tracking-wider"
+      className="cursor-pointer -mt-3 text-6xl font-cursive flex items-center justify-center w-full md:w-1/5 tracking-wider"
     >
       <div>B</div>
       <div className="-ml-1 translate-y-3">P</div>
