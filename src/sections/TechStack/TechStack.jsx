@@ -1,5 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { AnimatedCard, Section, SectionTitle } from '../../components';
+import {
+  AnimatedCard,
+  CarouselButton,
+  CarouselItem,
+  Section,
+  SectionTitle,
+} from '../../components';
 import PropTypes from 'prop-types';
 import { faCode } from '@fortawesome/free-solid-svg-icons';
 import { techStackData } from '../../utils/constants';
@@ -8,7 +14,7 @@ import Carousel from '../../components/Carousel/Carousel';
 export default function TechStack({ techStackRef }) {
   const carouselItems = [
     <>
-      <div>
+      <div className="p-2">
         <div className="leading-relaxed mb-4 font-bold">
           <p>Telerik Academy - Alpha JavaScript Track</p>
           <p className="font-normal">
@@ -39,7 +45,7 @@ export default function TechStack({ techStackRef }) {
       </div>
     </>,
     <>
-      <div>
+      <div className="p-2">
         <div className="leading-relaxed mb-4 font-bold">
           <p>Self - education - Udemy</p>
           <p className="font-normal">
@@ -65,16 +71,16 @@ export default function TechStack({ techStackRef }) {
       <SectionTitle>Tech Stack & Experience</SectionTitle>
       <div
         className="max-w-5xl bg-white/10 flex flex-col
-      md:flex-row items-start rounded-3xl p-10 gap-10 md:gap-5"
+      md:flex-row items-start rounded-3xl p-10 gap-6"
       >
-        <div className="w-full rounded-3xl md:w-1/2 md:pt-4 pb-1 border-b-8 md:border-r-8 border-blue-950">
-          <p className="font-bold mb-8 items-center leading-relaxed">
+        <div className="w-full md:w-1/2 rounded-3xl md:pt-5 p-1 border-b-8 md:border-r-8 border-blue-950">
+          <p className="font-bold mb-10 md:mb-2 items-center leading-relaxed">
             <span className="bg-blue-950 rounded-3xl text-2xl px-4 py-2 mr-2">
               <FontAwesomeIcon icon={faCode} />
             </span>
             Tech Stack
           </p>
-          <p className="italic mb-6 md:mb-2">
+          <p className="italic mb-6 md:mb-3">
             I love seeing code come to life before my eyes.
           </p>
           <div
@@ -84,7 +90,10 @@ export default function TechStack({ techStackRef }) {
           >
             {techStackData.map((item) => {
               return (
-                <AnimatedCard key={item.id}>
+                <AnimatedCard
+                  className="p-2 m-2 rounded-3xl bg-white shadow-2xl shadow-blue-950"
+                  key={item.id}
+                >
                   <img
                     title={`${item.name}`}
                     style={{
@@ -100,15 +109,30 @@ export default function TechStack({ techStackRef }) {
           </div>
         </div>
 
-        <div className="w-full rounded-3xl md:w-1/2 border-t-8 pt-5 md:pl-4 md:border-l-8 border-blue-950">
-          <p className="font-bold mb-8 items-center leading-relaxed">
+        <div className="w-full md:w-1/2 rounded-3xl md:pt-5 p-1 border-t-8 md:border-l-8 border-blue-950">
+          <p className="font-bold mt-3 md:mt-0 mb-9 items-center leading-relaxed">
             <span className="bg-blue-950 rounded-3xl text-2xl px-4 py-2 mr-2">
               <FontAwesomeIcon icon={faCode} />
             </span>
-            Frontend Development Experience
+            Frontend Experience
           </p>
 
-          <Carousel>{carouselItems}</Carousel>
+          <Carousel>
+            <div id="carousel-element" className="carousel w-full">
+              {carouselItems.map((item, index) => {
+                return (
+                  <CarouselItem key={index} id={`carousel-item${index + 1}`}>
+                    {item}
+                  </CarouselItem>
+                );
+              })}
+            </div>
+            <div className="flex w-full justify-center gap-1">
+              {carouselItems.map((_, index) => {
+                return <CarouselButton key={index} id={index} />;
+              })}
+            </div>
+          </Carousel>
         </div>
       </div>
     </Section>
