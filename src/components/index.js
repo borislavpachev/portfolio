@@ -8,3 +8,6 @@ export { default as SectionTitle } from './SectionTitle/SectionTitle';
 export { default as SocialLinks } from './SocialLinks/SocialLinks';
 export { default as AnimatedCard } from './AnimatedCard/AnimatedCard';
 export { default as ProjectCard } from './ProjectCard/ProjectCard';
+export { default as Carousel } from './Carousel/Carousel';
+export { default as CarouselButton } from './Carousel/CarouselButton';
+export { default as CarouselItem } from './Carousel/CarouselItem';
