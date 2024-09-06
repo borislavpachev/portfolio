@@ -1,36 +1,30 @@
-import { useState } from 'react';
-import { Button, Section, SectionTitle } from '../../components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { AnimatedCard, Section, SectionTitle } from '../../components';
 import PropTypes from 'prop-types';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 export default function Contact({ contactRef }) {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const handleClick = () => setIsOpen(!isOpen);
-
   return (
     <Section scrollRef={contactRef}>
       <SectionTitle>Contact Me</SectionTitle>
-      <div className="min-w-5xl p-10 items-center bg-white/10 rounded-3xl shadow-2xl">
-        <Button onClick={handleClick} className={`${isOpen && 'hidden'}`}>
-          Say Hello
-        </Button>
-
-        {isOpen && (
-          <form className="w-full">
-            <div className="flex items-center border-b border-blue-950 py-2">
-              <input
-                className="appearance-none bg-transparent text-white text-xl border-none w-full mr-3 py-1 px-2 leading-tight focus:outline-none"
-                type="text"
-                placeholder="Your email"
-                aria-label="Full name"
-              />
-              <Button type="submit" onClick={() => {}}>
-                Send
-              </Button>
-              <Button onClick={handleClick}>Cancel</Button>
-            </div>
-          </form>
-        )}
+      <div className="min-w-5xl flex flex-col md:flex-row p-10 text-2xl items-center bg-white/10 rounded-3xl shadow-2xl">
+        <div>
+          <p className="max-w-lg p-10">
+            {
+              "It would be a pleasure to build something great together - reach out, and let's connect!"
+            }{' '}
+          </p>
+        </div>
+        <a href="mailto:borislav.pachev@gmail.com" target="_blank">
+          <AnimatedCard
+            className={
+              'bg-blue-950 text-xl rounded-3xl p-10 shadow-2xl shadow-blue-950/90 border-white border-2 flex flex-col items-center'
+            }
+          >
+            <FontAwesomeIcon icon={faEnvelope} className="p-3 text-4xl" />
+            borislav.pachev@gmail.com
+          </AnimatedCard>
+        </a>
       </div>
     </Section>
   );
