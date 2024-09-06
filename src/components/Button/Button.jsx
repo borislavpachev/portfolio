@@ -10,7 +10,7 @@ export default function Button({
     <button
       type={type}
       className={`${className} text-lg px-8 py-2 rounded bg-white/20 border border-blue-950 text-blue-950
-        hover:bg-blue-950 hover:shadow-xl hover:shadow-blue-300/40 hover:text-white transition duration-200 ease-in-out`}
+        hover:bg-blue-950 hover:text-white transition duration-200 ease-in`}
       onClick={onClick}
     >
       {children}
