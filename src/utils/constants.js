@@ -140,11 +140,32 @@ export const techStackData = [
 
 export const projectsData = [
   {
-    description: 'Collaboration Video and Chat App',
-    backgroundImage: '',
+    name: 'Music.ant',
+    description: 'Seamless Music Streaming with Spotify API',
+    backgroundImage: '/projects/music-ant.png',
+    liveURL: 'https://music-ant.vercel.app/',
+
+    github: 'https://github.com/borislavpachev/music.Ant',
+  },
+  {
+    name: 'Connectify',
+    description: 'Collaborative Video Conferencing and Chat Platform',
+    backgroundImage: '/projects/connectify.webp',
     liveURL:
       'https://connectify-8ikv2t83m-borislavs-projects-3027afe4.vercel.app/',
 
     github: 'https://github.com/borislavpachev/Messenger-App-Upgrade',
+  },
+  {
+    name: 'Self FoRoom',
+    description: 'Self-Improvement Enthusiasts Forum',
+    backgroundImage: '/projects/self-foRoom.png',
+    github: 'https://github.com/WEB-Team-9-BDD/Forum-React-App',
+  },
+  {
+    name: 'Gif4e',
+    description: 'Giphy API Integration with Vanilla JS',
+    backgroundImage: '/projects/gif4e.png',
+    github: 'https://github.com/WEB-Team-9-BDD/GIPHY-Project',
   },
 ];
