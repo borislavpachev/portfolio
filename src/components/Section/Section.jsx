@@ -4,7 +4,7 @@ export default function Section({ scrollRef, className, children }) {
   return (
     <section
       ref={scrollRef}
-      className={`${className} m-16 flex flex-col items-center`}
+      className={`${className} m-auto flex flex-col items-center`}
     >
       {children}
     </section>
