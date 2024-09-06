@@ -5,12 +5,12 @@ import PropTypes from 'prop-types';
 
 export default function AboutMe({ aboutRef }) {
   return (
-    <section ref={aboutRef} className="m-16 flex flex-col items-center">
+    <section ref={aboutRef} className="flex flex-col items-center">
       <SectionTitle>About Me</SectionTitle>
       <div className="max-w-5xl flex items-center shadow-2xl text-2xl bg-white/10 rounded-3xl">
-        <div className="hidden w-1/3 md:block">
+        <div className="hidden h-[500px] w-1/3 md:flex">
           <img
-            className="h-full rounded-3xl rounded-r-none"
+            className="h-full object-cover rounded-3xl rounded-r-none"
             src="/about-me-coding-2.jpg"
             alt="photo"
           />
