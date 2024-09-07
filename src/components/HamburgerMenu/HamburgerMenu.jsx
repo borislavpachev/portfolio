@@ -5,7 +5,7 @@ import { faXmark } from '@fortawesome/free-solid-svg-icons';
 export default function HamburgerMenu({ handleOpen, isOpen, children }) {
   return (
     <>
-      <div className="md:hidden" onClick={handleOpen}>
+      <div className="md:hidden py-5" onClick={handleOpen}>
         <button
           className={`${
             isOpen ? 'hidden' : 'block'
@@ -18,9 +18,9 @@ export default function HamburgerMenu({ handleOpen, isOpen, children }) {
       </div>
 
       {isOpen && (
-        <div className="md:hidden flex flex-col items-center w-full">
+        <div className="md:hidden flex flex-col items-center bg-slate-500/40 py-5 w-full">
           <button
-            className="mb-3 -mt-9 hover:text-red-600"
+            className="mb-1 hover:text-red-600"
             onClick={handleOpen}
           >
             <FontAwesomeIcon icon={faXmark} size="xl" />

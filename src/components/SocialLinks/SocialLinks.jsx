@@ -7,7 +7,7 @@ import {
 
 export default function SocialLinks() {
   return (
-    <div className="w-full md:w-1/5 flex items-center justify-center md:justify-around space-x-5">
+    <div id='social-links' className="hidden md:flex w-full md:w-1/5 items-center justify-center gap-10">
       <a href="https://www.linkedin.com/in/borislav-pachev" target="_blank">
         <FontAwesomeIcon size="xl" icon={faLinkedinIn} />
       </a>
