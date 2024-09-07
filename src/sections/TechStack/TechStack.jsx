@@ -44,10 +44,11 @@ export default function TechStack({ techStackRef }) {
         </ul>
       </div>
     </>,
+    
     <>
       <div className="p-2">
         <div className="leading-relaxed mb-4 font-bold">
-          <p>Self - education - Udemy</p>
+          <p>Self - education (Udemy Courses and Personal Projects)</p>
           <p className="font-normal">
             <span className="font-bold">Period: </span>03/2024 - Present{' '}
           </p>
@@ -134,6 +135,7 @@ export default function TechStack({ techStackRef }) {
             </div>
           </Carousel>
         </div>
+      
       </div>
     </Section>
   );
