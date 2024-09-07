@@ -7,14 +7,15 @@ export default function Contact({ contactRef }) {
   return (
     <Section scrollRef={contactRef}>
       <SectionTitle>Contact Me</SectionTitle>
-      <div className="min-w-5xl flex flex-col md:flex-row p-10 text-2xl items-center bg-white/10 rounded-3xl shadow-2xl">
+      <div className="min-w-5xl flex flex-col md:flex-row m-auto p-10 md:p-0 md:py-12 md:px-16 text-2xl items-center bg-white/10 rounded-3xl shadow-2xl">
         <div>
-          <p className="max-w-lg p-10">
+          <p className="max-w-lg p-12">
             {
               "It would be a pleasure to build something great together - reach out, and let's connect!"
             }{' '}
           </p>
         </div>
+
         <a href="mailto:borislav.pachev@gmail.com" target="_blank">
           <AnimatedCard
             className={
