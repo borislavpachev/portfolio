@@ -17,8 +17,9 @@ export default function HeroSection() {
   });
 
   return (
-    <section className="my-0 md:my-10 p-10 flex flex-col items-center justify-center md:space-x-20 space-y-6 md:space-y-0 md:flex-row">
-      <div className="max-w-lg relative flex flex-col justify-center rounded-2xl space-y-8 p-16 md:p-12">
+    <section className="flex flex-col md:flex-row max-w-5xl m-auto my-0 md:my-10 items-center justify-center md:space-x-16">
+      
+      <div className="max-w-lg relative flex flex-col justify-center rounded-2xl space-y-8 m-12">
         <p className="text-5xl tracking-wider text-white/50">
           Hello, World!{' '}
           <span className="absolute z-30 text-white" ref={greetingHeroHandRef}>
@@ -35,17 +36,19 @@ export default function HeroSection() {
           >
             Web
           </div>
-          <div className="pp-2">Developer</div>
+          <div className="p-1">Developer</div>
         </div>
       </div>
-      <div className="max-w-lg flex self-center transition">
+      
+      <div className="h-auto max-w-lg">
         <img
-          src="/avatar.webp"
+          src="/avatar.png"
           loading="lazy"
-          className="w-full bg-blue-950 h-auto rounded-3xl shadow-2xl shadow-black/90"
+          className="w-full bg-white rounded-3xl shadow-2xl shadow-black/90"
           alt="hero"
         />
       </div>
+      
     </section>
   );
 }
