@@ -1,20 +1,22 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuoteRight } from '@fortawesome/free-solid-svg-icons';
-import { SectionTitle } from '../../components';
+import { Section, SectionTitle } from '../../components';
 import PropTypes from 'prop-types';
 
 export default function AboutMe({ aboutRef }) {
   return (
-    <section ref={aboutRef} className="flex flex-col items-center">
+    <Section scrollRef={aboutRef}>
       <SectionTitle>About Me</SectionTitle>
       <div className="max-w-5xl flex items-center shadow-2xl text-2xl bg-white/10 rounded-3xl">
+        
         <div className="hidden h-[500px] w-1/3 md:flex">
           <img
             className="h-full object-cover rounded-3xl rounded-r-none"
-            src="/about-me-coding-2.jpg"
+            src="/about-me-coding.jpg"
             alt="photo"
           />
         </div>
+
         <div className="p-14 md:w-2/3 relative text-pretty">
           <div className="absolute top-0 left-7 text-4xl md:text-5xl opacity-50">
             <FontAwesomeIcon icon={faQuoteRight} />
@@ -29,8 +31,9 @@ export default function AboutMe({ aboutRef }) {
             <FontAwesomeIcon icon={faQuoteRight} />
           </div>
         </div>
+        
       </div>
-    </section>
+    </Section>
   );
 }
 
