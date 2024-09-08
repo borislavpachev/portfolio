@@ -26,9 +26,9 @@ export default function HeroSection() {
             👋
           </span>
         </p>
-        <p className="font-bold text-6xl -tracking-wider">
+        <h1 className="font-bold text-6xl -tracking-wider">
           {`I'm Borislav Pachev`}
-        </p>
+        </h1>
         <div className="flex items-center space-x-1 text-5xl tracking-wider">
           <div
             className="bg-blue-950 ease-in rounded-b-lg p-3 -rotate-6 cursor-pointer hover:rotate-0 
@@ -40,11 +40,11 @@ export default function HeroSection() {
         </div>
       </div>
       
-      <div className="h-auto max-w-lg">
+      <div className="h-auto w-[512px]">
         <img
           src="/avatar.png"
-          loading="lazy"
-          className="w-full bg-white rounded-3xl shadow-2xl shadow-black/90"
+          loading='lazy'
+          className="w-full bg-white rounded-3xl shadow-2xl shadow-black/90 m-auto"
           alt="hero"
         />
       </div>
