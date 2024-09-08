@@ -5,9 +5,9 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 export default function Contact({ contactRef }) {
   return (
-    <Section scrollRef={contactRef}>
+    <Section scrollRef={contactRef} className="text-xl md:text-2xl">
       <SectionTitle>Contact Me</SectionTitle>
-      <div className="min-w-5xl flex flex-col md:flex-row m-auto p-10 md:p-0 md:py-12 md:px-16 text-2xl items-center bg-white/10 rounded-3xl shadow-2xl">
+      <div className="max-w-5xl flex flex-col md:flex-row m-auto pb-8 md:py-12 md:px-16 items-center bg-white/10 rounded-3xl shadow-2xl">
         <div>
           <p className="max-w-lg p-12">
             {
@@ -19,10 +19,10 @@ export default function Contact({ contactRef }) {
         <a href="mailto:borislav.pachev@gmail.com" target="_blank">
           <AnimatedCard
             className={
-              'bg-blue-950 text-xl rounded-3xl p-10 shadow-2xl shadow-blue-950/90 border-white border-2 flex flex-col items-center'
+              'flex flex-col bg-blue-950 text-sm md:text-xl rounded-3xl p-6 md:p-10 shadow-2xl shadow-blue-950/90 border-white border-2 items-center'
             }
           >
-            <FontAwesomeIcon icon={faEnvelope} className="p-3 text-4xl" />
+            <FontAwesomeIcon icon={faEnvelope} className="p-4 text-4xl" />
             borislav.pachev@gmail.com
           </AnimatedCard>
         </a>
