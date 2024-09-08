@@ -17,7 +17,7 @@ export default function HeroSection() {
   });
 
   return (
-    <section className="flex flex-col md:flex-row max-w-5xl m-auto my-0 md:my-10 items-center justify-center md:space-x-16">
+    <section className="flex flex-col md:flex-row max-w-5xl m-auto my-0 md:my-16 items-center justify-center md:space-x-16">
       
       <div className="max-w-lg relative flex flex-col justify-center rounded-2xl space-y-8 m-12">
         <p className="text-5xl tracking-wider text-white/50">
