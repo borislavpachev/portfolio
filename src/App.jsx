@@ -14,11 +14,13 @@ function App() {
     <>
       <main className="bg-gradient-to-br text-white from-black  via-blue-500 to-blue-950 h-full font-poppins">
         <Header refs={refs} />
-        <Hero />
-        <AboutMe aboutRef={aboutRef} />
-        <TechStack techStackRef={techStackRef} />
-        <Projects projectsRef={projectsRef} />
-        <Contact contactRef={contactRef} />
+        <div className="px-6 md:px-0">
+          <Hero />
+          <AboutMe aboutRef={aboutRef} />
+          <TechStack techStackRef={techStackRef} />
+          <Projects projectsRef={projectsRef} />
+          <Contact contactRef={contactRef} />
+        </div>
         <Footer />
       </main>
     </>

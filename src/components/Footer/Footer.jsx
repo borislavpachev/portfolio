@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="flex flex-col md:flex-row mt-20 items-center justify-evenly bg-blue-950/75 p-10 text-xl">
       <SocialLinks />
-      <div className="mt-5 md:mt-0">{`Copyright © ${currentYear} Borislav Pachev. All rights reserved.`}</div>
+      <div className="mt-5 md:mt-0 text-center">{`Copyright © ${currentYear} Borislav Pachev. All rights reserved.`}</div>
     </footer>
   );
 }

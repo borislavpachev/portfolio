@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 
 export default function AboutMe({ aboutRef }) {
   return (
-    <Section scrollRef={aboutRef} className="text-2xl">
+    <Section scrollRef={aboutRef} className="text-xl md:text-2xl">
       <SectionTitle>About Me</SectionTitle>
       <div className="max-w-5xl flex items-center shadow-2xl bg-white/10 rounded-3xl">
         <div className="hidden h-[500px] w-1/3 md:flex">

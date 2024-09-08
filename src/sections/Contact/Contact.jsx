@@ -9,7 +9,7 @@ export default function Contact({ contactRef }) {
       <SectionTitle>Contact Me</SectionTitle>
       <div className="max-w-5xl flex flex-col md:flex-row m-auto pb-8 md:py-12 md:px-16 items-center bg-white/10 rounded-3xl shadow-2xl">
         <div>
-          <p className="max-w-lg p-12">
+          <p className="max-w-md p-10">
             {
               "It would be a pleasure to build something great together - reach out, and let's connect!"
             }{' '}
