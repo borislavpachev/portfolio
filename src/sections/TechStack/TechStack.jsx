@@ -71,8 +71,8 @@ export default function TechStack({ techStackRef }) {
     <Section scrollRef={techStackRef} className={`text-xl`}>
       <SectionTitle>Tech Stack & Experience</SectionTitle>
       <div
-        className="w-full md:max-w-5xl bg-white/10 flex flex-col
-      md:flex-row rounded-3xl p-0 md:p-10 gap-6"
+        className="flex flex-col md:flex-row w-full md:max-w-5xl bg-white/10 
+       rounded-3xl p-0 md:p-10 gap-6"
       >
         <div className="w-full md:w-1/2 rounded-3xl md:pt-5 border-b-8 md:border-r-8 border-blue-950">
           <p className="font-bold mb-10 mt-5 md:mt-0 md:mb-2 items-center leading-relaxed">
