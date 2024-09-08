@@ -44,7 +44,7 @@ export default function TechStack({ techStackRef }) {
         </ul>
       </div>
     </>,
-    
+
     <>
       <div className="p-2">
         <div className="leading-relaxed mb-4 font-bold">
@@ -71,17 +71,17 @@ export default function TechStack({ techStackRef }) {
     <Section scrollRef={techStackRef} className={`text-xl`}>
       <SectionTitle>Tech Stack & Experience</SectionTitle>
       <div
-        className="max-w-5xl bg-white/10 flex flex-col
-      md:flex-row items-start rounded-3xl p-10 gap-6"
+        className="w-full md:max-w-5xl bg-white/10 flex flex-col
+      md:flex-row rounded-3xl p-0 md:p-10 gap-6"
       >
-        <div className="w-full md:w-1/2 rounded-3xl md:pt-5 p-1 border-b-8 md:border-r-8 border-blue-950">
-          <p className="font-bold mb-10 md:mb-2 items-center leading-relaxed">
-            <span className="bg-blue-950 rounded-3xl text-2xl px-4 py-2 mr-2">
+        <div className="w-full md:w-1/2 rounded-3xl md:pt-5 border-b-8 md:border-r-8 border-blue-950">
+          <p className="font-bold mb-10 mt-5 md:mt-0 md:mb-2 items-center leading-relaxed">
+            <span className="bg-blue-950 rounded-3xl text-2xl px-4 py-2 mx-2">
               <FontAwesomeIcon icon={faCode} />
             </span>
             Tech Stack
           </p>
-          <p className="italic mb-6 md:mb-3">
+          <p className="italic mb-6 mx-3 md:mb-3">
             I love seeing code come to life before my eyes.
           </p>
           <div
@@ -135,7 +135,6 @@ export default function TechStack({ techStackRef }) {
             </div>
           </Carousel>
         </div>
-      
       </div>
     </Section>
   );
