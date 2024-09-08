@@ -40,7 +40,7 @@ export default function HeroSection() {
         </div>
       </div>
       
-      <div className="h-auto max-w-lg">
+      <div className="h-auto max-w-[450px]">
         <img
           src="/avatar.png"
           loading='lazy'
