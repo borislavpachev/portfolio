@@ -40,11 +40,11 @@ export default function HeroSection() {
         </div>
       </div>
       
-      <div className="h-auto w-[512px]">
+      <div className="h-auto max-w-lg">
         <img
           src="/avatar.png"
           loading='lazy'
-          className="w-full bg-white rounded-3xl shadow-2xl shadow-black/90 m-auto"
+          className="w-full bg-white rounded-3xl shadow-2xl shadow-black/90"
           alt="hero"
         />
       </div>
