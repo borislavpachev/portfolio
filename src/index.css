@@ -34,19 +34,6 @@
   transform: translateY(18px);
 }
 
-/*Remove scrollbar in tech-stack list*/
-@layer utilities {
-  /* Chrome, Safari and Opera */
-  #tech-stack::-webkit-scrollbar {
-    display: none;
-  }
-
-  #tech-stack {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-  }
-}
-
 footer #social-links {
   display: flex;
 }
