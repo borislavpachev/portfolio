@@ -16,7 +16,7 @@ export default function AboutMe({ aboutRef }) {
           />
         </div>
 
-        <div className="p-14 md:w-2/3 relative text-pretty">
+        <div className="w-full md:w-2/3 p-10 md:p-14 relative text-pretty">
           <div className="absolute top-0 left-7 text-4xl md:text-5xl opacity-50">
             <FontAwesomeIcon icon={faQuoteRight} />
           </div>
