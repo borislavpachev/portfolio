@@ -18,7 +18,7 @@ export default function HeroSection() {
 
   return (
     <section className="flex flex-col md:flex-row max-w-5xl m-auto my-0 md:my-16 items-center justify-center md:space-x-16">
-      <div className="max-w-lg relative flex flex-col justify-center rounded-2xl space-y-8 m-12">
+      <div className="w-full md:max-w-lg relative flex flex-col justify-center rounded-2xl space-y-8 my-12">
         <p className="text-3xl md:text-5xl tracking-wide text-white/50">
           Hello, World!{' '}
           <span className="absolute z-30 text-white" ref={greetingHeroHandRef}>
@@ -39,11 +39,14 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className="h-auto max-w-[450px]">
+      <div
+        className="h-auto max-w-[450px] flex justify-center
+      "
+      >
         <img
           src="/avatar.png"
           loading="lazy"
-          className="w-full bg-white rounded-3xl shadow-2xl shadow-black/90"
+          className="w-full bg-white rounded-3xl shadow-2xl shadow-black/90 -ml-0 md:-ml-10"
           alt="hero"
         />
       </div>

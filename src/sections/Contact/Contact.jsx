@@ -7,7 +7,7 @@ export default function Contact({ contactRef }) {
   return (
     <Section scrollRef={contactRef} className="text-xl md:text-2xl">
       <SectionTitle>Contact Me</SectionTitle>
-      <div className="max-w-5xl flex flex-col md:flex-row m-auto pb-8 md:py-12 md:px-16 items-center bg-white/10 rounded-3xl shadow-2xl">
+      <div className="w-full md:max-w-5xl flex flex-col md:flex-row m-auto pb-8 md:py-12 md:px-16 items-center bg-white/10 rounded-3xl shadow-2xl">
         <div>
           <p className="max-w-md p-10">
             {
@@ -16,14 +16,19 @@ export default function Contact({ contactRef }) {
           </p>
         </div>
 
-        <a href="mailto:borislav.pachev@gmail.com" target="_blank">
+        <a
+          href="mailto:borislav.pachev@gmail.com"
+          target="_blank"
+          className="w-[80%] md:max-w-md"
+        >
           <AnimatedCard
-            className={
-              'flex flex-col bg-blue-950 text-sm md:text-xl rounded-3xl p-6 md:p-10 shadow-2xl shadow-blue-950/90 border-white border-2 items-center'
-            }
+            className="flex flex-col whitespace-nowrap overflow-hidden items-center bg-blue-950 text-xl rounded-3xl p-6 md:p-10 
+          shadow-2xl shadow-blue-950/90 border-white border-2"
           >
             <FontAwesomeIcon icon={faEnvelope} className="p-4 text-4xl" />
-            borislav.pachev@gmail.com
+            <p className="max-w-full overflow-hidden text-ellipsis">
+              borislav.pachev@gmail.com
+            </p>
           </AnimatedCard>
         </a>
       </div>
