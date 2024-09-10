@@ -131,7 +131,7 @@ export const techStackData = [
     name: 'Vercel',
     logo: '/icons/vercel.svg',
     color:
-      'brightness(0) saturate(100%) invert(0%) sepia(60%) saturate(0%) hue-rotate(135deg) brightness(108%) contrast(102%);',
+      'brightness(0) saturate(100%) invert(0%) sepia(60%) saturate(0%) hue-rotate(135deg) brightness(108%) contrast(102%)',
   },
   {
     id: 'npm',
@@ -184,7 +184,7 @@ export const projectsData = [
       'Implemented the CRUD operations with chats',
       'Designed the database structure and created login, registration, and user profile',
       'Implemented error handling, error page and file upload',
-      'Dark mode- toggle your preferred color mode',
+      'Dark mode - toggle your preferred color mode',
       'Maintained proactive approach in organizing team meetings, providing key features and ideas for project development, and setting clear objectives to meet our deadline',
     ],
     technologies: [
