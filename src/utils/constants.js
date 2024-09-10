@@ -149,7 +149,7 @@ export const projectsData = [
     description: 'Collaborative Video Conferencing and Chat Platform',
     backgroundImage: '/projects/connectify.webp',
     liveURL:
-      'https://connectify-8ikv2t83m-borislavs-projects-3027afe4.vercel.app/',
+      'https://connectify-cn9qzkybz-borislavs-projects-3027afe4.vercel.app/',
     github: 'https://github.com/borislavpachev/Messenger-App-Upgrade',
     summary:
       'WEB application for collaboration between co-workers and teams. Chat with any user of the platform. Live messages updates, create new chats, edit chat member list and leave chats.',
