@@ -9,7 +9,7 @@ function Modal({ open, close, children }) {
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="relative w-[75%] h-[75%] md:max-w-2xl rounded-3xl flex
+        className="relative w-[95%] h-[95%] md:max-w-2xl rounded-3xl flex
            bg-blue-500 text-white text-xl overflow-auto
         items-center justify-center"
       >
