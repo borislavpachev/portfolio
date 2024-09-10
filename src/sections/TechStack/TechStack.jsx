@@ -39,12 +39,12 @@ export default function TechStack({ techStackRef }) {
           <div
             id="tech-stack"
             className="max-h-[330px] grid grid-cols-[repeat(auto-fill,minmax(120px,1fr))]
-          place-items-center rounded-3xl p-3 overflow-auto"
+          place-items-center rounded-3xl p-1 gap-x-2 gap-y-2 overflow-auto"
           >
             {techStackData.map((technology) => {
               return (
                 <AnimatedCard
-                  className="w-full md:w-[120px] flex flex-col p-2 m-1 items-center text-center justify-center rounded-3xl bg-white shadow-2xl shadow-blue-950"
+                  className="w-full md:w-[135px] flex flex-col p-2 items-center text-center justify-center rounded-3xl bg-white shadow-2xl shadow-blue-950"
                   key={technology.id}
                   title={technology.name}
                 >
