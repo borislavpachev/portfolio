@@ -1,16 +1,16 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useState } from 'react';
+import PropTypes from 'prop-types';
 import {
   AnimatedCard,
   CarouselButton,
   CarouselItem,
+  Carousel,
   Section,
   SectionTitle,
 } from '../../components';
-import PropTypes from 'prop-types';
 import { faCode } from '@fortawesome/free-solid-svg-icons';
 import { techStackData } from '../../utils/constants';
-import Carousel from '../../components/Carousel/Carousel';
-import { useState } from 'react';
 
 export default function TechStack({ techStackRef }) {
   const [activeButtonIndex, setActiveButtonIndex] = useState(0);
@@ -38,24 +38,27 @@ export default function TechStack({ techStackRef }) {
           </p>
           <div
             id="tech-stack"
-            className="max-h-[330px] grid grid-cols-[repeat(auto-fill,minmax(100px,1fr))]
+            className="max-h-[330px] grid grid-cols-[repeat(auto-fill,minmax(120px,1fr))]
           place-items-center rounded-3xl p-3 overflow-auto"
           >
-            {techStackData.map((item) => {
+            {techStackData.map((technology) => {
               return (
                 <AnimatedCard
-                  className="p-2 m-2 rounded-3xl bg-white shadow-2xl shadow-blue-950"
-                  key={item.id}
+                  className="w-full md:w-[120px] flex flex-col p-2 m-1 items-center text-center justify-center rounded-3xl bg-white shadow-2xl shadow-blue-950"
+                  key={technology.id}
+                  title={technology.name}
                 >
                   <img
-                    title={`${item.name}`}
                     style={{
-                      filter: `${item.color}`,
+                      filter: `${technology.color}`,
                     }}
-                    className="w-[150px] p-2 shadow-2xl shadow-blue-950 rounded-3xl"
-                    src={item.logo}
-                    alt={item.name}
+                    className="w-[100px] h-[auto] p-2 shadow-2xl shadow-blue-950 rounded-3xl"
+                    src={technology.logo}
+                    alt={technology.name}
                   />
+                  <p className="w-full mt-1 overflow-hidden text-ellipsis text-nowrap text-blue-950">
+                    {technology.name}
+                  </p>
                 </AnimatedCard>
               );
             })}
