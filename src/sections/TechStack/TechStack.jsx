@@ -39,7 +39,7 @@ export default function TechStack({ techStackRef }) {
           <div
             id="tech-stack"
             className="max-h-[330px] grid grid-cols-[repeat(auto-fill,minmax(120px,1fr))]
-          place-items-center rounded-3xl p-1 gap-x-2 gap-y-2 overflow-auto"
+          place-items-center rounded-3xl p-2 gap-x-2 gap-y-2 overflow-auto"
           >
             {techStackData.map((technology) => {
               return (
