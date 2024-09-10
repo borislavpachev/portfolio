@@ -69,10 +69,13 @@ export default function ProjectCard({ project }) {
             </ul>
           </div>
 
-          <div className="flex space-x-2 mb-2">
+          <div className="flex space-x-2">
             {projectTechnologiesUsed.map((technology) => {
               return (
-                <div key={technology.id} className="bg-white rounded-3xl">
+                <div
+                  key={technology.id}
+                  className="bg-white my-2 md:my-8 rounded-3xl"
+                >
                   <img
                     title={`${technology.name}`}
                     style={{
@@ -87,12 +90,14 @@ export default function ProjectCard({ project }) {
             })}
           </div>
 
-          <div className="flex flex-col md:flex-row w-1/2 md:w-full space-y-5 md:space-x-10 md:space-y-0 items-center justify-center">
-            <AnimatedCard className="w-full">
+          <div
+            className={`flex flex-col md:flex-row w-1/2 space-y-5 md:${
+              project.liveURL ? 'space-x-10 w-full' : 'w-1/2'
+            } md:space-y-0 items-center justify-center`}
+          >
+            <AnimatedCard className={`${!project.liveURL && 'hidden'} w-full`}>
               <a href={project.liveURL} target="_blank" className="w-full">
-                <Button className={`${!project.liveURL && 'hidden'} w-full`}>
-                  Live
-                </Button>
+                <Button className="w-full">Live</Button>
               </a>
             </AnimatedCard>
             <a href={project.github} target="_blank" className="w-full">
