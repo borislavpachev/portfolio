@@ -10,62 +10,14 @@ import PropTypes from 'prop-types';
 import { faCode } from '@fortawesome/free-solid-svg-icons';
 import { techStackData } from '../../utils/constants';
 import Carousel from '../../components/Carousel/Carousel';
+import { useState } from 'react';
 
 export default function TechStack({ techStackRef }) {
-  const carouselItems = [
-    <>
-      <div className="p-2">
-        <div className="leading-relaxed mb-4 font-bold">
-          <p>Telerik Academy - Alpha JavaScript Track</p>
-          <p className="font-normal">
-            <span className="font-bold">Period: </span>10/2023 - 03/2024{' '}
-          </p>
-          <p>
-            <a
-              className="underline items-center font-bold"
-              href="https://drive.google.com/file/d/1LR0ijOwdCn_pUlDehIPjKfwXTpoVoQFY/view"
-              target="_blank"
-              rel="Certificate"
-            >
-              Certificate
-            </a>
-          </p>
-        </div>
+  const [activeButtonIndex, setActiveButtonIndex] = useState(0);
 
-        <p className="mb-2">Acquired a solid foundation in the following:</p>
-        <ul>
-          <li className="list-disc ml-6">JavaScript Core </li>
-          <li className="list-disc ml-6">Object Oriented Programming</li>
-          <li className="list-disc ml-6">SOLID Principles</li>
-          <li className="list-disc ml-6">Data Structures and Algorithms</li>
-          <li className="list-disc ml-6">JavaScript Web with React</li>
-          <li className="list-disc ml-6">Unit Testing</li>
-          <li className="list-disc ml-6">Version Control (Git)</li>
-        </ul>
-      </div>
-    </>,
-
-    <>
-      <div className="p-2">
-        <div className="leading-relaxed mb-4 font-bold">
-          <p>Self - education (Udemy Courses and Personal Projects)</p>
-          <p className="font-normal">
-            <span className="font-bold">Period: </span>03/2024 - Present{' '}
-          </p>
-        </div>
-        <p className="mb-2">
-          Completed Udemy courses with the following technologies:
-        </p>
-        <ul>
-          <li className="list-disc ml-6">TypeScript</li>
-          <li className="list-disc ml-6">Node.js + Express</li>
-          <li className="list-disc ml-6">Sass</li>
-          <li className="list-disc ml-6">Tailwind CSS</li>
-          <li className="list-disc ml-6">React Testing Library</li>
-        </ul>
-      </div>
-    </>,
-  ];
+  const handleButtonClick = (index) => {
+    setActiveButtonIndex(index);
+  };
 
   return (
     <Section scrollRef={techStackRef} className={`text-xl`}>
@@ -130,7 +82,14 @@ export default function TechStack({ techStackRef }) {
             </div>
             <div className="flex w-full justify-center gap-1">
               {carouselItems.map((_, index) => {
-                return <CarouselButton key={index} id={index} />;
+                return (
+                  <CarouselButton
+                    key={index}
+                    id={index}
+                    active={activeButtonIndex}
+                    setActive={() => handleButtonClick(index)}
+                  />
+                );
               })}
             </div>
           </Carousel>
@@ -139,6 +98,61 @@ export default function TechStack({ techStackRef }) {
     </Section>
   );
 }
+
+const carouselItems = [
+  <>
+    <div className="p-2">
+      <div className="leading-relaxed mb-4 font-bold">
+        <p>Telerik Academy - Alpha JavaScript Track</p>
+        <p className="font-normal">
+          <span className="font-bold">Period: </span>10/2023 - 03/2024{' '}
+        </p>
+        <p>
+          <a
+            className="underline items-center font-bold"
+            href="https://drive.google.com/file/d/1LR0ijOwdCn_pUlDehIPjKfwXTpoVoQFY/view"
+            target="_blank"
+            rel="Certificate"
+          >
+            Certificate
+          </a>
+        </p>
+      </div>
+
+      <p className="mb-2">Acquired a solid foundation in the following:</p>
+      <ul>
+        <li className="list-disc ml-6">JavaScript Core </li>
+        <li className="list-disc ml-6">Object Oriented Programming</li>
+        <li className="list-disc ml-6">SOLID Principles</li>
+        <li className="list-disc ml-6">Data Structures and Algorithms</li>
+        <li className="list-disc ml-6">JavaScript Web with React</li>
+        <li className="list-disc ml-6">Unit Testing</li>
+        <li className="list-disc ml-6">Version Control (Git)</li>
+      </ul>
+    </div>
+  </>,
+
+  <>
+    <div className="p-2">
+      <div className="leading-relaxed mb-4 font-bold">
+        <p>Self - education (Udemy Courses and Personal Projects)</p>
+        <p className="font-normal">
+          <span className="font-bold">Period: </span>03/2024 - Present{' '}
+        </p>
+      </div>
+      <p className="mb-2">
+        Completed Udemy courses with the following technologies:
+      </p>
+      <ul>
+        <li className="list-disc ml-6">TypeScript</li>
+        <li className="list-disc ml-6">Node.js + Express</li>
+        <li className="list-disc ml-6">Sass</li>
+        <li className="list-disc ml-6">Tailwind CSS</li>
+        <li className="list-disc ml-6">React Testing Library</li>
+      </ul>
+    </div>
+  </>,
+];
 
 TechStack.propTypes = {
   techStackRef: PropTypes.any,
