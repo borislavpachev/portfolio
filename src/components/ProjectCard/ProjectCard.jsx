@@ -46,7 +46,7 @@ export default function ProjectCard({ project }) {
       </div>
 
       <Modal open={open} close={() => setOpen(false)}>
-        <div className="flex flex-col p-10 mt-5 m-auto space-y-8 items-center">
+        <div className="flex flex-col p-4 md:p-10 mt-5 m-auto space-y-8 items-center">
           <h1 className="text-4xl">{project.name}</h1>
           <img
             title={`${project.name}`}
