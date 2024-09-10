@@ -3,7 +3,7 @@ import { useGSAP } from '@gsap/react';
 import { useRef } from 'react';
 import PropTypes from 'prop-types';
 
-export default function AnimatedCard({ className='',children }) {
+export default function AnimatedCard({ title = '', className = '', children }) {
   const elementRef = useRef(null);
   const { contextSafe } = useGSAP({ scope: elementRef });
 
@@ -40,6 +40,7 @@ export default function AnimatedCard({ className='',children }) {
 
   return (
     <div
+      title={title}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       className={`${className} flex items-center justify-center`}
@@ -51,6 +52,7 @@ export default function AnimatedCard({ className='',children }) {
 }
 
 AnimatedCard.propTypes = {
-    className: PropTypes.string,
+  title: PropTypes.string,
+  className: PropTypes.string,
   children: PropTypes.node,
 };
