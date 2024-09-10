@@ -21,6 +21,11 @@ export const techStackData = [
       'brightness(0) saturate(100%) invert(60%) sepia(86%) saturate(455%) hue-rotate(173deg) brightness(114%) contrast(97%)',
   },
   {
+    id: 'reactrouter',
+    name: 'React Router',
+    logo: '/icons/reactrouter.svg',
+  },
+  {
     id: 'html5',
     name: 'HTML5',
     logo: '/icons/html5.svg',
@@ -122,13 +127,24 @@ export const techStackData = [
     logo: '/icons/firebase.svg',
   },
   {
+    id: 'vercel',
+    name: 'Vercel',
+    logo: '/icons/vercel.svg',
+    color:
+      'brightness(0) saturate(100%) invert(0%) sepia(60%) saturate(0%) hue-rotate(135deg) brightness(108%) contrast(102%);',
+  },
+  {
     id: 'npm',
     name: 'NPM',
     logo: '/icons/npm.svg',
     color:
       'brightness(0) saturate(100%) invert(34%) sepia(35%) saturate(3902%) hue-rotate(345deg) brightness(88%) contrast(78%)',
   },
-
+  {
+    id: 'vite',
+    name: 'Vite',
+    logo: '/icons/vite.svg',
+  },
   {
     id: 'dotenv',
     name: 'DOTENV',
@@ -144,8 +160,15 @@ export const projectsData = [
     description: 'Seamless Music Streaming with Spotify API',
     backgroundImage: '/projects/music-ant.png',
     liveURL: 'https://music-ant.vercel.app/',
-
     github: 'https://github.com/borislavpachev/music.Ant',
+    summary:
+      'WEB application using Spotify API for accessing a vast library of songs, artists, and featured music streams and personal preferences',
+    features: [
+      'Responsive design - Small mobile screens to large desktop monitors',
+      'Authorization - using a PKCE Flow',
+      'Dark mode - Toggle your preferred color mode',
+    ],
+    technologies: ['React', 'React Router', 'Bootstrap', 'Vite', 'Vercel'],
   },
   {
     name: 'Connectify',
@@ -153,19 +176,54 @@ export const projectsData = [
     backgroundImage: '/projects/connectify.webp',
     liveURL:
       'https://connectify-8ikv2t83m-borislavs-projects-3027afe4.vercel.app/',
-
     github: 'https://github.com/borislavpachev/Messenger-App-Upgrade',
+    summary:
+      'WEB application for collaboration between co-workers and teams. Chat with any user of the platform. Live messages updates, create new chats, edit chat member list and leave chats.',
+    features: [
+      'Implemented the video calling and real-time notifications',
+      'Implemented the CRUD operations with chats',
+      'Designed the database structure and created login, registration, and user profile',
+      'Implemented error handling, error page and file upload',
+      'Dark mode- toggle your preferred color mode',
+      'Maintained proactive approach in organizing team meetings, providing key features and ideas for project development, and setting clear objectives to meet our deadline',
+    ],
+    technologies: [
+      'React',
+      'React Router',
+      'Bootstrap',
+      'Firebase',
+      'Vercel',
+      'Vite',
+      'Daily.co',
+    ],
   },
   {
     name: 'Self FoRoom',
     description: 'Self-Improvement Enthusiasts Forum',
     backgroundImage: '/projects/self-foRoom.png',
     github: 'https://github.com/WEB-Team-9-BDD/Forum-React-App',
+    summary:
+      'The forum is focused on personal growth and self-improvement, the users can write posts in certain categories. Change, edit, delete your post, and add comments to a post. Admins can block users, delete posts, and make other users admins',
+    features: [
+      'Implemented a table for searching, sorting, and CRUD operations on posts',
+      'User input validations and login page, user profile page, and profile update page',
+      'Error handling and error page',
+      'Routing, sidebar and categories',
+    ],
+    technologies: ['React', 'React Router', 'PrimeReact', 'CSS3', 'Firebase'],
   },
   {
     name: 'Gif4e',
     description: 'Giphy API Integration with Vanilla JS',
     backgroundImage: '/projects/gif4e.png',
     github: 'https://github.com/WEB-Team-9-BDD/GIPHY-Project',
+    summary:
+      'This single-page, Vanilla JS application allows users to explore top trending GIFs, search for specific GIFs, add GIFs to favorites, and upload GIFs directly to their Giphy profile.',
+    features: [
+      'Navigation in the project using navbar',
+      'Searching gifs by specific search criteria',
+      'Upload gifs in Giphy profile using both files and external links',
+    ],
+    technologies: ['JavaScript', 'HTML5', 'CSS3'],
   },
 ];
