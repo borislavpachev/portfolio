@@ -60,11 +60,7 @@ export const techStackData = [
     color:
       'brightness(0) saturate(100%) invert(43%) sepia(87%) saturate(405%) hue-rotate(222deg) brightness(75%) contrast(95%)',
   },
-  {
-    id: 'gsap',
-    name: 'GSAP',
-    logo: '/icons/gsap.svg',
-  },
+
   {
     id: 'node.js',
     name: 'Node.js',
@@ -99,13 +95,6 @@ export const techStackData = [
     logo: '/icons/jest.svg',
     color:
       'brightness(0) saturate(100%) invert(15%) sepia(100%) saturate(4271%) hue-rotate(347deg) brightness(78%) contrast(95%)',
-  },
-  {
-    id: 'testinglibrary',
-    name: 'TestingLibrary',
-    logo: '/icons/testinglibrary.svg',
-    color:
-      'brightness(0) saturate(100%) invert(41%) sepia(85%) saturate(2905%) hue-rotate(337deg) brightness(87%) contrast(105%)',
   },
   {
     id: 'git',
@@ -147,7 +136,7 @@ export const techStackData = [
   },
   {
     id: 'dotenv',
-    name: 'DOTENV',
+    name: 'Dotenv',
     logo: '/icons/dotenv.svg',
     color:
       'brightness(0) saturate(100%) invert(87%) sepia(70%) saturate(3789%) hue-rotate(325deg) brightness(98%) contrast(88%)',
@@ -155,21 +144,6 @@ export const techStackData = [
 ];
 
 export const projectsData = [
-  {
-    name: 'Music.ant',
-    description: 'Seamless Music Streaming with Spotify API',
-    backgroundImage: '/projects/music-ant.png',
-    liveURL: 'https://music-ant.vercel.app/',
-    github: 'https://github.com/borislavpachev/music.Ant',
-    summary:
-      'WEB application using Spotify API for accessing a vast library of songs, artists, and featured music streams and personal preferences',
-    features: [
-      'Responsive design - Small mobile screens to large desktop monitors',
-      'Authorization - using a PKCE Flow',
-      'Dark mode - Toggle your preferred color mode',
-    ],
-    technologies: ['React', 'React Router', 'Bootstrap', 'Vite', 'Vercel'],
-  },
   {
     name: 'Connectify',
     description: 'Collaborative Video Conferencing and Chat Platform',
@@ -192,10 +166,25 @@ export const projectsData = [
       'React Router',
       'Bootstrap',
       'Firebase',
-      'Vercel',
-      'Vite',
       'Daily.co',
+      'Vite',
+      'Vercel',
     ],
+  },
+  {
+    name: 'Music.ant',
+    description: 'Seamless Music Streaming with Spotify API',
+    backgroundImage: '/projects/music-ant.png',
+    liveURL: 'https://music-ant.vercel.app/',
+    github: 'https://github.com/borislavpachev/music.Ant',
+    summary:
+      'WEB application using Spotify API for accessing a vast library of songs, artists, and featured music streams and personal preferences',
+    features: [
+      'Responsive design - Small mobile screens to large desktop monitors',
+      'Authorization - using a PKCE Flow',
+      'Dark mode - Toggle your preferred color mode',
+    ],
+    technologies: ['React', 'React Router', 'Bootstrap', 'Vercel', 'Vite'],
   },
   {
     name: 'Self FoRoom',
