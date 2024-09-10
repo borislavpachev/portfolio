@@ -46,7 +46,7 @@ export default function ProjectCard({ project }) {
       </div>
 
       <Modal open={open} close={() => setOpen(false)}>
-        <div className="flex flex-col p-4 md:p-10 mt-5 m-auto space-y-8 items-center">
+        <div className="flex flex-col p-4 md:p-10 mt-5 m-auto space-y-12 items-center">
           <h1 className="text-4xl">{project.name}</h1>
           <img
             title={`${project.name}`}
@@ -69,25 +69,35 @@ export default function ProjectCard({ project }) {
             </ul>
           </div>
 
-          <div className="flex space-x-2">
-            {projectTechnologiesUsed.map((technology) => {
-              return (
-                <div
-                  key={technology.id}
-                  className="bg-white my-2 md:my-8 rounded-3xl"
-                >
-                  <img
-                    title={`${technology.name}`}
-                    style={{
-                      filter: `${technology.color}`,
-                    }}
-                    className="w-[80px] p-2 shadow-2xl shadow-blue-950 rounded-3xl"
-                    src={technology.logo}
-                    alt={technology.name}
-                  />
-                </div>
-              );
-            })}
+          <div className="flex flex-col w-full">
+            <p className="underline text-center text-2xl mb-5">Technologies</p>
+            <div
+              className="w-full overflow-auto max-h-[120px] grid grid-cols-[repeat(auto-fill,minmax(100px,1fr))]
+            rounded-3xl place-items-center
+          "
+            >
+              {projectTechnologiesUsed.map((technology) => {
+                return (
+                  <div
+                    key={technology.id}
+                    title={technology.name}
+                    className="w-[100px] p-1 m-1 flex flex-col items-center justify-center text-center bg-white rounded-3xl"
+                  >
+                    <img
+                      style={{
+                        filter: `${technology.color}`,
+                      }}
+                      className="w-[70px] h-auto p-2 shadow-2xl shadow-blue-950 rounded-3xl"
+                      src={technology.logo}
+                      alt={technology.name}
+                    />
+                    <p className="w-full mt-1 overflow-hidden text-ellipsis text-nowrap text-blue-950">
+                      {technology.name}
+                    </p>
+                  </div>
+                );
+              })}
+            </div>
           </div>
 
           <div
