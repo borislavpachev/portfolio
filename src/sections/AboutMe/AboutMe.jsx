@@ -23,7 +23,7 @@ export default function AboutMe({ aboutRef }) {
           <p>{`I'm a web developer based in Sofia, always eager for new challenges.
           Programming has become my passion, turning each project into an
           adventure filled with discovery, personal growth, and the satisfaction
-          of creating something new. I love the good company of friends and
+          of creating something new. Aside from coding, I love the good company of friends and
           enjoy exploring nature with my camera fully charged or setting out for
           a winter hike.`}</p>
           <div className="absolute bottom-0 right-10 text-4xl md:text-5xl opacity-50">
