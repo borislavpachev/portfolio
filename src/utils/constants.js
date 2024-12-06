@@ -145,6 +145,43 @@ export const techStackData = [
 
 export const projectsData = [
   {
+    name: 'CUBE',
+    description: `"The perfect fit for every day" inspired E-shop`,
+    backgroundImage: '/projects/cube.svg',
+    liveURL: 'https://cube-full-stack.vercel.app/',
+    github: 'https://github.com/borislavpachev/cube-full-stack',
+    summary:
+      'A full-stack e-commerce web application for selling customized t-shirts',
+    features: [
+      '***Frontend***',
+      'Authentication with JWT',
+      'Used Context API for persistent login sessions',
+      'Integrated AWS S3 for image storage – S3 buckets used for scalability',
+      'Created custom hooks for using forms, context and managing cart actions',
+      'Developed responsive design and interactive UI for better UX',
+      'Admin panel for managing users ( create, block, unblock, delete in data table) and products (CRUD operations)',
+      '',
+      '***Backend***',
+      'Built a RESTful API to manage product listings, orders, and user profiles following the MVC architecture',
+      'Authentication: using JWT',
+      'Role-based access control (RBAC) for handling user and admin functionalities',
+      'Mongoose used as ODM for efficient data retrieval and updates',
+    ],
+    technologies: [
+      'React',
+      'React Router',
+      'TypeScript',
+      'Tailwind CSS',
+      'JWT',
+      'AWS S3',
+      'Node.js',
+      'Express',
+      'MongoDB',
+      'Mongoose',
+      'Vercel',
+    ],
+  },
+  {
     name: 'Connectify',
     description: 'Collaborative Video Conferencing and Chat Platform',
     backgroundImage: '/projects/connectify.webp',
