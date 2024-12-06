@@ -146,8 +146,8 @@ export const techStackData = [
 export const projectsData = [
   {
     name: 'CUBE',
-    description: `"The perfect fit for every day" inspired E-shop`,
-    backgroundImage: '/projects/cube.svg',
+    description: `Customized T-shirts E-commerce shop`,
+    backgroundImage: '/projects/cube.png',
     liveURL: 'https://cube-full-stack.vercel.app/',
     github: 'https://github.com/borislavpachev/cube-full-stack',
     summary:

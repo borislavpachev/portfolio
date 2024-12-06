@@ -27,7 +27,7 @@ export default function ProjectCard({ project }) {
       >
         <img
           title={`${project.name}`}
-          className={`w-[250px] h-[250px] bg-blue-950 object-contain p-2 ${project.backgroundColor} rounded-3xl shadow-lg shadow-blue-950`}
+          className={`w-[250px] h-[250px] bg-blue-950 object-contain p-4 ${project.backgroundColor} rounded-3xl shadow-lg shadow-blue-950`}
           src={project.backgroundImage}
           alt={project.name}
         />
